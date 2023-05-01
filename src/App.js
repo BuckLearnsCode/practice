@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+import React from 'react';
+import { DnDCharacterStatsSheet } from 'dnd-character-sheets';
+import { DnDCharacterProfileSheet } from 'dnd-character-sheets';
+import { DnDCharacterSpellSheet } from 'dnd-character-sheets';
+import 'dnd-character-sheets/dist/index.css';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <DnDCharacterStatsSheet />
+      <DnDCharacterProfileSheet />
+      <DnDCharacterSpellSheet />
     </div>
   );
 }
